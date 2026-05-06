@@ -3,7 +3,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
     
     
-    <title>이지영 - 웹 개발자 포트폴리오 프레젠테이션</title>
+    <title>이지영 - 웹 개발자 포트폴리오</title>
     
 
     
@@ -473,7 +473,7 @@
     
     <section id="hero" class="container">
       <div class="hero-content">
-        <span class="greeting">안녕하세요, 코드 깎는걸 즐기는 웹 개발자입니다 👋</span>
+        <span class="greeting">안녕하세요, 코드 깎는것을 즐기는 웹 개발자입니다 👋</span>
         <h1 class="hero-title">코드 너머의 <br>비즈니스 가치를<br>설계합니다.</h1>
         <p class="hero-desc">
           풀스택 웹 개발자 이지영입니다. 백엔드의 견고함과 프론트엔드의 흐름을 함께 설계합니다.
@@ -547,66 +547,38 @@ Java/Spring Boot부터 Vue.js까지 전 계층을 직접 다루며, 비즈니스
 
       
       <article class="project-card glass-card">
-        <div class="project-visual">🛒</div>
+        <div class="project-visual"><img src="https://raw.githubusercontent.com/LeeJiiYoung/LeeJiiYoung.github.io/main/1.png" alt="WhaleOrder 프로젝트" style="width:100%; height:100%; object-fit:cover;"/></div>
         <div class="project-info">
-          <h3></h3>
+          <h3>WhaleOrder</h3>
           <p style="color: var(--color-text-muted)">
-            ~~ 개선한
-            프로젝트입니다.
+            카페 주문 시스템의 전체 플로우(회원 → 메뉴 → 주문)를 직접 설계하고 운영 환경까지 구축하는 경험이 필요했습니다.
           </p>
 
-          <div class="project-metrics">
-            <div class="metric">
-              <span>전환율 상승</span>
-              <strong>+24%</strong>
-            </div>
-            <div class="metric">
-              <span>LCP 개선</span>
-              <strong>1.2s</strong>
-            </div>
-          </div>
-
           <ul class="project-detail-list">
-            <li><strong>문제:</strong> 느린 페이지 이동 속도와 복잡한 결제 플로우로 인한 높은 이탈률</li>
-            <li><strong>해결:</strong> Next.js SSR 적용 및 결제 프로세스 UI/UX 간소화</li>
-            <li><strong>기술:</strong> 자바, 11,22</li>
+            <li><strong>문제:</strong> 카페 주문 시스템의 전체 플로우(회원 → 메뉴 → 주문)를 직접 설계하고 운영 환경까지 구축하는 경험이 필요했습니다.</li>
+            <li><strong>해결:</strong> Java 21 + Spring Boot 3.5 기반으로 회원관리, 메뉴 등록, 주문 처리 기능을 구현하고, Redis를 활용한 장바구니 임시 저장 구조를 설계하여 DB 부하를 줄이고 빠른 응답속도를 확보했습니다. Docker 컨테이너화 후 AWS에 직접 배포하여 실 운영 환경을 구성했으며, QueryDSL·JPA 기반의 타입 안전한 데이터 계층을 설계했습니다.</li>
+            <li><strong>기술:</strong> Java 21, Spring Boot 3.5, PostgreSQL, Redis, QueryDSL, JPA, Docker, AWS, Git, Claude</li>
           </ul>
 
           <div class="tag-cloud" style="margin-top: 16px">
-            <a href="https://github.com/doyunkim/ecommerce-renewal" class="tech-tag" style="border-color: var(--color-primary); color: var(--card-title-color)">GitHub 보기</a>
+            <a href="https://github.com/LeeJiiYoung/WhaleOrder" target="blank" class="tech-tag" style="border-color: var(--color-primary); color: var(--card-title-color)">GitHub 보기</a>
           </div>
         </div>
       </article>
 
       
-      <article class="project-card glass-card">
-        <div class="project-visual">📊</div>
+      <article class="project-card glass-card" style="grid-template-columns: 1fr;">
         <div class="project-info">
-          <h3>제목2</h3>
+          <h3>국회사무처 인적자원 관리시스템 고도화 및 웹 표준 전환</h3>
           <p style="color: var(--color-text-muted)">
-            ~ 극대화했습니다.
+            기존 인적자원 관리시스템 고도화 및 추가 개발
           </p>
 
-          <div class="project-metrics">
-            <div class="metric">
-              <span>렌더링 시간 단축</span>
-              <strong>-60%</strong>
-            </div>
-            <div class="metric">
-              <span>데이터 처리량</span>
-              <strong>10k+ rows</strong>
-            </div>
-          </div>
-
           <ul class="project-detail-list">
-            <li><strong>문제:</strong> 수만 건의 테이블 데이터 로드 시 브라우저 프리징 현상 발생</li>
-            <li><strong>해결:</strong> Virtual Scroll(가상화) 도입 및 차트 컴포넌트 Lazy Loading 적용</li>
-            <li><strong>기술:</strong> React, TypeScript, Zustand, Recharts</li>
+            <li><strong>문제:</strong> PowerBuilder 기반의 노후 클라이언트 애플리케이션과 JSP 스크립틀릿으로 파편화된 레거시 시스템이 유지보수 한계에 도달하여 전면 현대화가 필요했습니다.</li>
+            <li><strong>해결:</strong> PowerBuilder 소스를 Java로 이관하고, JSP 스크립틀릿에 집중된 비즈니스 로직을 Java Service Layer로 분리하여 계층 구조를 정립했습니다. 화면은 WebSquare 기반 웹 표준으로 전환하였으며, DB 스키마 재설계 및 정규화를 통해 데이터 정합성을 확보했습니다. 화면 설계, 백엔드 개발까지 전 과정에 참여했습니다.</li>
+            <li><strong>기술:</strong> Java 17, Spring, eGovFramework, WebSquare5, Oracle, MyBatis, SVN</li>
           </ul>
-
-          <div class="tag-cloud" style="margin-top: 16px">
-            <a href="https://github.com/doyunkim/saas-dashboard" class="tech-tag" style="border-color: var(--color-primary); color: var(--card-title-color)">GitHub 보기</a>
-          </div>
         </div>
       </article>
     </section>
